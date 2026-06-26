@@ -3,140 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortal Kombat - Enhanced Canvas Edition</title>
+    <title>Fiat Uno: Uma Lenda das Estradas</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background: radial-gradient(circle, #1a0505 0%, #0a0202 100%);
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
             color: white;
-            font-family: 'Impact', 'Arial Black', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        h1 {
-            margin: 0 0 10px 0;
-            font-size: 42px;
-            color: #ff2a00;
-            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 4px 4px 0px #000;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        #game-container {
-            position: relative;
-            border: 5px solid #222;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 42, 0, 0.3);
-            background-color: #000;
-        }
-
-        /* Interface do Usuário (HUD) */
-        #hud {
-            position: absolute;
-            top: 25px;
-            left: 30px;
-            right: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            pointer-events: none;
-            user-select: none;
-        }
-
-        .health-container {
-            width: 42%;
-            height: 24px;
-            background: rgba(40, 40, 40, 0.8);
-            border: 2px solid #ffd700;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            overflow: hidden;
-            position: relative;
-        }
-
-        .health-bar {
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(to bottom, #ffe600 0%, #ff3300 100%);
-            transition: width 0.15s ease-out;
-        }
-
-        #p1-health-bar {
-            transform-origin: left;
-        }
-
-        #p2-health-bar {
-            transform-origin: right;
-            background: linear-gradient(to bottom, #ffe600 0%, #ff3300 100%);
-        }
-
-        .player-name {
-            position: absolute;
-            top: -20px;
-            font-size: 16px;
-            color: #fff;
-            text-shadow: 2px 2px 2px #000;
-            letter-spacing: 1px;
-        }
-
-        #p2-name { right: 0; }
-
-        #timer {
-            font-size: 36px;
-            color: #fff;
-            background: radial-gradient(circle, #333 0%, #111 100%);
-            padding: 5px 18px;
-            border: 3px solid #ffd700;
-            border-radius: 3px;
-            text-shadow: 2px 2px 4px #000;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.7);
-            min-width: 40px;
+            padding: 20px;
             text-align: center;
+            border-radius: 5px;
         }
-
-        /* Tela de Fim de Jogo */
-        #screen-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
+        main {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+        table {
             width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            display: none;
-            z-index: 10;
+            border-collapse: collapse;
+            margin-top: 15px;
         }
-
-        #win-text {
-            font-size: 60px;
-            color: #ff2a00;
-            text-shadow: 0 0 20px rgba(255,42,0,0.8), 3px 3px 0 #000;
-            margin-bottom: 25px;
-            letter-spacing: 2px;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
         }
-
-        button {
-            padding: 12px 30px;
-            font-size: 20px;
-            font-family: 'Impact', sans-serif;
-            background: linear-gradient(to bottom, #ff5500 0%, #990000 100%);
-            color: white;
-            border: 2px solid #fff;
-            cursor: pointer;
-            letter-spacing: 1px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        th {
+            background-color: #f2f2f2;
         }
-
-        button:hover {
-            background: linear-gradient(to bottom, #ff7733 0%, #cc0000 100%);
-            box-shadow: 0 0 15px rgba(255, 85, 0, 0.6);
+        .destaque {
+            font-weight: bold;
+            color: #d9534f;
         }
+    </style>
+</head>
+<body>
 
-        .controls-panel
+    <header>
+        <h1>Fiat Uno</h1>
+        <p>O carro que marcou gerações e a história automotiva brasileira.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>História do Uno</h2>
+            <p>Lançado na Europa em 1983 e chegando ao Brasil em 1984, o Fiat Uno revolucionou o mercado com o seu design "bota quadrada", assinado pelo renomado estilista Giorgetto Giugiaro. Ele foi projetado para aproveitar ao máximo o espaço interno, sendo um carro compacto por fora e muito espaçoso por dentro.</p>
+        </section>
+
+        <section>
+            <h2>Curiosidades</h2>
+            <ul>
+                <li><span class="destaque">Uno com escada:</span> No Brasil, o Uno Mille de firma carregando uma escada no teto virou um meme nacional de velocidade e eficiência.</li>
+                <li><span class="destaque">Economia:</span> Sempre foi conhecido por ser um dos carros mais econômicos e de manutenção mais barata do país.</li>
+                <li><span class="destaque">Despedida:</span> Após quase 40 anos de história, o modelo se despediu do mercado brasileiro no final de 2021 com a série especial <em>Ciao</em>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Modelos Icônicos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Ano de Destaque</th>
+                        <th>Principal Característica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fiat Uno 1.5R</td>
+                        <td>1987</td>
+                        <td>Visual esportivo e motor potente para a época.</td>
+                    </tr>
+                    <tr>
+                        <td>Fiat Uno Mille</td>
+                        <td>1990</td>
+                        <td>Inaugurou a era dos carros populares com motor 1.0.</td>
+                    </tr>
+                    <tr>
+                        <td>Fiat Uno Turbo</td>
+                        <td>1994</td>
+                        <td>O primeiro carro nacional a vir com turbo de fábrica.</td>
+                    </tr>
+                    <tr>
+                        <td>Novo Uno</td>
+                        <td>2010</td>
+                        <td>Visual totalmente reformulado com o conceito "Round Square".</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
